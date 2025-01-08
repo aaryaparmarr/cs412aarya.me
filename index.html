@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarya Parmar</title>
+    <link id="dark-view" rel="stylesheet" href="style.css" >
+    <link id="light-view" rel="stylesheet" href="style2.css"  disabled>
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="name-background">
+<h1>
+    Aarya Parmar
+</h1>
+<h2> Welcome to my Personal Website</h2>
+<h3> Please navigate around my website using the above tabs to learn more about me! </h3>
+<h3> I am a Junior Computer Science Student at Texas A&M looking for a Software Engineering Internship for Summer 2025</h3>
+<div class="theme-toggle-container">
+    <button id="toggle-light" class="toggle-dark" style="display:none;">Switch to Dark Mode</button>
+    <button id="toggle-dark" class="toggle-light">Switch to Light Mode</button>
+</div>
+</div>
+</div>
+</body>
+<footer class="footer">
+    <div class="container">
+        <a href="https://www.linkedin.com/in/aarya-parmar" target="_blank">
+            <img src="images/linkedin_icon.png" alt="LinkedIn" class="footer-icon">
+        </a>
+        <a href="mailto:aarya.parmar04@gmail.com">
+            <img src="images/email_icon.png" alt="Email" class="footer-icon">
+        </a>
+        <a href="https://github.com/CSCE331-Fall2024/personal-website-aaryaparmar.git">
+            <img src="images/github_icon.png" alt="Github" class="footer-icon">
+        </a>
+    </div>
+</footer>
+<script>
+    function setTheme(theme) {
+        const lightView = document.getElementById('light-view');
+        const darkView = document.getElementById('dark-view');
+        if (lightView && darkView) {
+            if (theme === 'light') {
+                lightView.disabled = false;
+                darkView.disabled = true;
+                document.getElementById('toggle-light').style.display = 'block';
+                document.getElementById('toggle-dark').style.display = 'none';
+            } else {
+                lightView.disabled = true;
+                darkView.disabled = false;
+                document.getElementById('toggle-light').style.display = 'none';
+                document.getElementById('toggle-dark').style.display = 'block';
+            }
+        }
+    }
+    
+    // Check for saved theme on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        setTheme(savedTheme);
+    
+        // Add event listeners for theme toggle buttons only if they exist
+        const toggleLightButton = document.getElementById('toggle-light');
+        const toggleDarkButton = document.getElementById('toggle-dark');
+        
+        if (toggleLightButton) {
+            toggleLightButton.addEventListener('click', function() {
+                setTheme('dark');
+                localStorage.setItem('theme', 'dark'); // Save the theme to localStorage
+            });
+        }
+    
+        if (toggleDarkButton) {
+            toggleDarkButton.addEventListener('click', function() {
+                setTheme('light');
+                localStorage.setItem('theme', 'light'); // Save the theme to localStorage
+            });
+        }
+    });
+    </script>
+</html>

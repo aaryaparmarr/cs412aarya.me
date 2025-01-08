@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Aarya Parmar</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="light-view" rel="stylesheet" href="style2.css"  disabled>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </div>
+    <h1>Contact Me</h1>
+    <p id="centered-text">This page was AI generated.</p>
+    <p id="centered-text">The prompt: "I want to create a 'Contact Me' page with icons for a mailbox and LinkedIn for contact options, rather than a form. Make the icons' glow" </p>
+
+    <div class="contact-icons">
+        <a href="mailto:aarya.parmar04@gmail.com" title="Email Me">
+            <img src="images/email_icon.png" alt="Mailbox Icon" class="contact-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/aarya-parmar" target="_blank" title="LinkedIn Profile">
+            <img src="images/linkedin_icon.png" alt="LinkedIn Icon" class="contact-icon">
+        </a>
+    </div>
+    <script>
+        // Function to set the theme
+        function setTheme(theme) {
+            if (theme === 'light') {
+                document.getElementById('light-view').disabled = false;
+                document.getElementById('dark-view').disabled = true;
+            } else {
+                document.getElementById('light-view').disabled = true;
+                document.getElementById('dark-view').disabled = false;
+            }
+        }
+
+        // Check for saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            setTheme(savedTheme);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualifications - Aarya Parmar</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="light-view" rel="stylesheet" href="style2.css"  disabled>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </div>
+
+    <h1>Qualifications</h1>
+    <div class="qualifications-container">
+        <div class="text-container">
+        <p>My technical skills include a wide range of programming languages, development tools, and methodologies,
+            reflecting a solid foundation in both software and data engineering. I am proficient in languages such as
+            <b>Java, Python, SQL, and C++,</b> which have allowed me to complete complex programming challenges and
+            develop clean and efficient solutions. My experience with Azure Synapse, PySpark, and cloud computing
+            platforms has further improved my ability to work with large-scale data, ensuring that I can handle
+            everything from data ingestion to analysis and reporting. Additionally, I am proficient in web development
+            technologies like HTML, CSS, and JavaScript, enabling me to create user-friendly interfaces and
+            applications.
+
+        </p>
+        <p> I have an interest in <b>data science, health tech, and artificial intelligence (AI)</b>. My interest with data
+            science stems from its ability to uncover patterns and insights from amounts of information, which
+            can be leveraged to solve complex problems across many industries. I am drawn to the
+            intersection of data science and health tech, where I see potential for improving healthcare
+            outcomes through data-driven decision-making. Projects like my Yoga Schedule Builder app reflect this
+            interest, as they combine my passion for health tech with my technical skills in data processing and user
+            interface design.
+        
+        </p>
+            <p>
+                AI is another area that interests me due to its impact on technology and society.
+                The ability of AI to learn, adapt, and solve problems autonomously opens up endless possibilities for
+                innovation. I am excited to explore how AI can be integrated with data science and health tech to develop
+                intelligent systems that enhance human well-being and efficiency. Whether it's using AI to predict health
+                trends or developing algorithms that drive financial literacy tools, I am passionate about harnessing the
+                power of these technologies to create solutions that make a real difference.
+                
+            </p>
+            <p>
+                I have also had the opportunity to attend the <a href="https://ghc.anitab.org/">Grace Hopper Celebration 2023</a>, a Women in Technology Career fair where I was able to 
+                learn from and network with many women in various industries. This year I will be attending the <a href="https://we24.swe.org/">Society of Women Engineers Career fair (WE24)</a>.
+            </p>
+            <p>If the PDF below doesn’t display, you can download it <a href="images/Parmar_Aarya.pdf" download>here</a>.</p>
+        </div>    
+            <div class="pdf-container">
+                <iframe src="https://drive.google.com/file/d/1OeTd1-vjxReX-vlzdP7zFOGs1mc6IAr_/preview" width="600" height="400"></iframe>
+            </div>
+        </div>
+        <script>
+            // Function to set the theme
+            function setTheme(theme) {
+                if (theme === 'light') {
+                    document.getElementById('light-view').disabled = false;
+                    document.getElementById('dark-view').disabled = true;
+                } else {
+                    document.getElementById('light-view').disabled = true;
+                    document.getElementById('dark-view').disabled = false;
+                }
+            }
+    
+            // Check for saved theme on page load
+            document.addEventListener('DOMContentLoaded', function() {
+                const savedTheme = localStorage.getItem('theme') || 'dark';
+                setTheme(savedTheme);
+            });
+        </script>
+</body>
+<footer class="footer">
+    <div class="container">
+        <a href="https://www.linkedin.com/in/aarya-parmar" target="_blank">
+            <img src="images/linkedin_icon.png" alt="LinkedIn" class="footer-icon">
+        </a>
+        <a href="mailto:aarya.parmar04@gmail.com">
+            <img src="images/email_icon.png" alt="Email" class="footer-icon">
+        </a>
+        <a href="https://github.com/CSCE331-Fall2024/personal-website-aaryaparmar.git">
+            <img src="images/github_icon.png" alt="Github" class="footer-icon">
+        </a>
+    </div>
+</footer>
+</html>

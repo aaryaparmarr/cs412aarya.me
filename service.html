@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service - Aarya Parmar</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="light-view" rel="stylesheet" href="style2.css"  disabled>
+</head>
+<body>
+    <script>
+        // Function to set the theme
+        function setTheme(theme) {
+            if (theme === 'light') {
+                document.getElementById('light-view').disabled = false;
+                document.getElementById('dark-view').disabled = true;
+            } else {
+                document.getElementById('light-view').disabled = true;
+                document.getElementById('dark-view').disabled = false;
+            }
+        }
+
+        // Check for saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            setTheme(savedTheme);
+        });
+    </script>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </div>
+    <h1>Service</h1>
+    <p>Giving back to the community is an integral part of who I am, and I engage in many
+        volunteer and mentoring roles to make a positive impact. As a Volunteer Coordinator for
+        BAPS Charities since January 2016, I have led teams in organizing and executing
+        community-focused projects, particularly in health and wellness. My role involves
+        mentoring volunteers, managing resources, and orchestrating events like the Annual
+        Health Fair, where we prescreen patients and conduct BMI-related measurements to
+        enhance community health awareness. To learn more about <a href="https://www.baps.org/home.aspx">BAPS</a> 
+        and <a href="https://www.bapscharities.org/">BAPS Charities</a> please click the respective links.
+        
+       </p>
+    <p>
+        At Texas A&M University, I am also an active member of the Philanthropy Committee for
+        Aggie Classics, where I help coordinate fundraising events to support Rescue Pink, an
+        organization dedicated to empowering women and children in need. From organizing
+        bracelet-making events to leading our annual Walkathon, I am committed to raising funds
+        and awareness for this important cause, with the goal of contributing over $10,000
+        annually. To learn more about Aggie Classics please click <a href="https://aggieclassics.wixsite.com/aggieclassics">here.</a>
+        I also participate in the annual Big Event in College Station, where thousands of
+        Texas A&M students come together to say “Thank You” to the residents of Bryan and
+        College Station by completing service projects such as yard work, window washing, and
+        painting for residents of the community. To learn more about Big Event please click <a href="https://bigevent.tamu.edu/">here.</a>
+    </p>
+    <div class="service-images">
+        <div class="image-container">
+            <img src="images/baps.jpg" alt="BAPS Charities Event">
+            <p class="caption">This picture is from volunteering at a BAPS Charities Event.</p>
+        </div>
+        <div class="image-container">
+            <img src="images/rescuepink.jpg" alt="bracelets to send to the Rescue Pink">
+            <p class="caption">This picture is from when I, along with Aggie Classics, made bracelets to send to the Rescue Pink organization. This is a picture of the girls wearing the bracelets.</p>
+        </div>
+        <div class="image-container">
+            <img src="images/endalz.JPG" alt="Walkathon">
+            <p class="caption">This picture is from when I raised money and attended a Walkathon to help find a cure for <a href="https://act.alz.org/site/TR/Walk2024/TX-HoustonampSoutheastTexas?pg=entry&fr_id=17942">Alzheimer's.</a></p>
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <div class="container">
+        <a href="https://www.linkedin.com/in/aarya-parmar" target="_blank">
+            <img src="images/linkedin_icon.png" alt="LinkedIn" class="footer-icon">
+        </a>
+        <a href="mailto:aarya.parmar04@gmail.com">
+            <img src="images/email_icon.png" alt="Email" class="footer-icon">
+        </a>
+        <a href="https://github.com/CSCE331-Fall2024/personal-website-aaryaparmar.git">
+            <img src="images/github_icon.png" alt="Github" class="footer-icon">
+        </a>
+    </div>
+</footer>
+</html>
